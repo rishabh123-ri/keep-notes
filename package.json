@@ -23,11 +23,11 @@
     "react-dom": "^18.3.1",
     "react-scripts": "^3.4.4",
     "web-vitals": "^2.1.4",
-    "webpack": "^5.94.0"
+    "webpack": "4.47.0"
   },
   "scripts": {
     "start": "react-scripts --openssl-legacy-provider start",
-    "build": "NODE_OPTIONS=--openssl-legacy-provider",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
