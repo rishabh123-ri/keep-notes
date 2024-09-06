@@ -50,7 +50,6 @@ input {
   border: none;
   height: 7vh;
   width: 30vw;
-
   margin-bottom: 12px;
 }
 input[type="text"] {
@@ -75,12 +74,15 @@ textarea {
 }
 .Main_note {
   display: flex;
+  flex-wrap: wrap;
+  justify-content:space-between ;
+  margin: 0px 30px;
   margin-top: 50px;
   /* border: 2px solid red; */
 }
 .note {
-  width: 15vw;
-  height: 18vh;
+  width:45%;
+  min-height: 18vh;
   /* border: 2px solid red; */
   padding: 10px;
   margin-left: 10px;
@@ -89,6 +91,7 @@ textarea {
 }
 .Note_title {
   display: flex;
+  flex: 1;
   font-size: 20px;
   font-family: "Nunito", sans-serif;
   padding: 2px;
@@ -99,19 +102,24 @@ textarea {
 .Delete_btn {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-@media (min-width: 100px) and (max-width: 1000px) {
+@media (min-width: 100px) and (max-width: 600px) {
   textarea {
     height: 10vh;
     width: 82vw;
   }
 }
-@media (min-width: 100px) and (max-width: 1000px) {
+@media (min-width: 100px) and (max-width: 600px) {
   input {
     width: 82vw;
   }
 }
-@media (min-width: 100px) and (max-width: 1000px) {
+@media (min-width: 100px) and (max-width: 600px) {
   .note {
-    width: 50vw;
+    width: 90%;
+    margin-bottom:20px ;
+  }
+  .Main_note {
+    flex-direction: column;
+    flex-wrap: nowrap;
   }
 }
