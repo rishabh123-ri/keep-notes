@@ -75,13 +75,13 @@ textarea {
 .Main_note {
   display: flex;
   flex-wrap: wrap;
-  justify-content:space-between ;
+  justify-content: space-between;
   margin: 0px 30px;
   margin-top: 50px;
   /* border: 2px solid red; */
 }
 .note {
-  width:45%;
+  width: 45%;
   min-height: 18vh;
   /* border: 2px solid red; */
   padding: 10px;
@@ -116,7 +116,7 @@ textarea {
 @media (min-width: 100px) and (max-width: 600px) {
   .note {
     width: 90%;
-    margin-bottom:20px ;
+    margin-bottom: 20px;
   }
   .Main_note {
     flex-direction: column;
